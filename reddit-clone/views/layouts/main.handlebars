@@ -13,6 +13,11 @@
 </head>
 <body>
     <nav class="navbar navbar-default">
+        <a class="navbar-brand" href="http://localhost:3000/">
+            <div>
+            <img alt="Brand" src="https://cdn.freebiesupply.com/logos/large/2x/reddit-1-logo-png-transparent.png" style="height: 25px;">
+        </div>
+          </a>
       <div class="container">
         {{#if currentUser}}
             <a href="/posts/new" class="btn btn-primary navbar-btn">New Post</a>
@@ -26,8 +31,7 @@
           {{/if}}
         </ul>
       </div>
-    </div>
-
+  </nav>
   <div class="container">
       <div class="row">
           <div class="col-sm-8 col-sm-offset-2">

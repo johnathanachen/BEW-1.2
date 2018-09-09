@@ -16,7 +16,7 @@ module.exports = (app) => {
     })
 
     // CREATE
-    app.post('/posts', (req, res) => {
+    app.post('/posts/', (req, res) => {
 
     //Instatiate instance of post model
     var post = new Post(req.body);

@@ -8,6 +8,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
+const path = require('path');
 
 const app = express();
 
@@ -16,7 +17,7 @@ const app = express();
 // ===================================================================================
 
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost/redditclone', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost:27017/reddit-clone', { useNewUrlParser: true })
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection Error:'))
 mongoose.set("debug", true);
 
@@ -30,6 +31,7 @@ app.engine(".handlebars", exphbs({
     defaultLayout: "main"
 }));
 app.set("view engine", "handlebars");
+app.use(express.static('./public'));
 
 // ===================================================================================
 // VERIFY USER AUTHENTICATION ========================================================
@@ -59,9 +61,7 @@ require("./controllers/auth.js")(app);
 require('./controllers/comments.js')(app);
 require('./controllers/posts.js')(app);
 
-require("./models/comment.js")(app);
-require("./models/post.js")(app);
-require("./models/user.js")(app);
+const Post = require('./models/post.js')
 
 // ===================================================================================
 // ======== GET ======================================================================
@@ -70,16 +70,18 @@ require("./models/user.js")(app);
 app.get('/', (req, res) => {
   var currentUser = req.user;
 
-  Post.find({}).then((posts) => {
+Post.find({}).then((posts) => {
+
     res.render('posts-index', { posts, currentUser })
   }).catch((err) => {
     console.log(err.message);
   });
+
 })
 
 app.get('/login', (req, res) => {
     res.render('login');
-  });
+ });
 
 app.get("/sign-up", (req, res) => {
     res.render("sign-up");
@@ -88,7 +90,7 @@ app.get("/sign-up", (req, res) => {
 app.get('/logout', (req, res) => {
     res.clearCookie('nToken');
     res.redirect('/');
-  });
+ });
 
 app.get('/posts/new', function (req, res) {
   res.render('posts-new')
