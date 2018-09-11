@@ -6,6 +6,22 @@
 
 ## How to Use This API
 
+-- api.domain.com/theater
+There is a DB called theaters
+
+-- api.domain.com/theater/{id}
+theaters.findOne({_id: theaterId});
+^ Is used to find a specific sessions in the session table
+
+-- api.domain.com/session
+There is a DB called sessions
+
+-- api.domain.com/session/{id}
+sessions.find({_id: sessionId});
+^ Is used to find a specific sessions in the session table
+
+
+
 [**TODO**] List **each route individually** and one to two sentences describing the intention of each route. You MUST include practical examples of how to call each route!
 
 ## What I Learned

@@ -12,4 +12,9 @@ router.get('/:id', function (req, res) {
   res.json({'stub': `[${req.originalUrl}] Endpoint works!`});
 });
 
+// Insert a new session to theater
+router.post('/:id', function (req, res) {
+  res.json({'stub': `[${req.originalUrl}] Endpoint works!`});
+});
+
 module.exports = router;
