@@ -1,19 +1,12 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const Mixed = Schema.Types.Mixed;
 
-const SessionSchema = new Schema({
-	_id: {type: Object},
-	theaterId: {type: Int},
-	name: {type: String, required: true},
-	description: {type: String, required: true},
-	start: {type: String, required: true},
-    end
-    price
-    seatsAvailable
-    seats
-    reservations
+const TheaterSchema = new Schema({
+	_id: {type: Number},
+	name: {type: String},
+	seats: {type: Mixed, default: []},
+	seatsAvailable: {type: Number}
 });
 
-
-
-module.exports = mongoose.model('Post', PostSchema);
+module.exports = mongoose.model('Theater', TheaterSchema, 'theaters');

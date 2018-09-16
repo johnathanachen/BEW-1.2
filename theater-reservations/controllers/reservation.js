@@ -1,9 +1,19 @@
 const express = require('express');
 var router = express.Router();
 
-// All reservations of a session from a theater
-router.get('/reservations', function (req, res) {
+// All reservations
+router.get('/', function (req, res) {
   res.json({'stub': `[${req.originalUrl}] Endpoint works!`});
+});
+
+// Reserve seats in a session
+router.put('/reserve', function (req, res) {
+  res.redirect('/success');
+});
+
+// Successfully reserved seat
+router.get('/success', function (req, res) {
+  res.json({'reservation success!': `[${req.originalUrl}] Endpoint works!`});
 });
 
 // // A specific reservations of a session from a theater

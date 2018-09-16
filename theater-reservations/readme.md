@@ -6,19 +6,23 @@
 
 ## How to Use This API
 
--- api.domain.com/theater
+-- api.domain.com/theaters
 There is a DB called theaters
 
--- api.domain.com/theater/{id}
+-- api.domain.com/theaters/{id}
 theaters.findOne({_id: theaterId});
 ^ Is used to find a specific sessions in the session table
 
--- api.domain.com/session
+-- api.domain.com/sessions
 There is a DB called sessions
 
--- api.domain.com/session/{id}
+-- api.domain.com/sessions/{id}
 sessions.find({_id: sessionId});
 ^ Is used to find a specific sessions in the session table
+
+-- api.domain.com/carts/{id}
+db.getSisterDB("booking").carts;
+^ There is a DB called Carts
 
 
 
