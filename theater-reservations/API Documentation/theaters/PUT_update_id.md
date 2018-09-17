@@ -44,4 +44,4 @@ seatsAvailable | Number | N | Avaiable seats in Theater
 }
 ```
 
-[Theaters]: /theater-reservations/API%20Documentation/theaters
+[Theater]: /theater-reservations/API%20Documentation/theaters
