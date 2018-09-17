@@ -13,5 +13,5 @@ seatsAvailable | Number | number of seats open
 seats | Mixed | 2D array of seats
 reservations | Array | [[Reservation]]
   
-[Theater]: /API%20Documentation/Theater/README.md
-[Reservation]: /API%20Documentation/Reservation/reservation.md
+[Theater]: /theater-reservations/API%20Documentation/Theater/README.md
+[Reservation]: /theater-reservations/API%20Documentation/Reservation/reservation.md
