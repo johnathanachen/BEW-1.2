@@ -13,8 +13,6 @@ RESTful and resourceful routing techniques by creating a Theater Reservations AP
 ### [Theaters][]
 - **[<code>POST</code>Theaters](API%20Documentation/theaters/theaters.md)**
 
-[**TODO**] List **each route individually** and one to two sentences describing the intention of each route. You MUST include practical examples of how to call each route!
-
 ## What I Learned
 
 [**TODO**] Add bullet points describing what you learned by implementing this project.
