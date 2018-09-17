@@ -75,5 +75,5 @@ reservations | [[Reservation]] | Y |
 ```
 
 
-[Theater]: /theater-reservations/API%20Documentation/Theater/README.md
-[Reservation]: /theater-reservations/API%20Documentation/Reservation/README.md
+[Theater]: /theater-reservations/API%20Documentation/theaters/README.md
+[Reservation]: /theater-reservations/API%20Documentation/reservation/README.md
