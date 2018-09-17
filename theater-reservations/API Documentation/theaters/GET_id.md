@@ -29,7 +29,7 @@ Returns a single [Theater Type].
 }
 ```
 
-[Theater Type]: /API%20Documentation/theaters/README.md
+[Theater Type]: /theater-reservations/API%20Documentation/theaters/README.md
 
 
 
