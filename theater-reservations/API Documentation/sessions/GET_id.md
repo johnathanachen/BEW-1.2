@@ -40,6 +40,6 @@ Returns a single [Session Type].
 }
 ```
 
-[Session Type]: /API%20Documentation/sessions/README.md
+[Session Type]: /theater-reservations/API%20Documentation/sessions/README.md
 
 
