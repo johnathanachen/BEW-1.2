@@ -45,5 +45,5 @@ Returns a list of current [Sessions] for all [Theater]
   }
 ```
 
-[Theater]: API%20Documentation/theaters/README.md
-[Sessions]: API%20Documentation/sessions/README.md
+[Theater]: /theater-reservations/API%20Documentation/theaters/README.md
+[Sessions]: /theater-reservations/API%20Documentation/sessions/README.md
