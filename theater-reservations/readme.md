@@ -23,5 +23,5 @@ RESTful and resourceful routing techniques by creating a Theater Reservations AP
 [**TODO**] Add bullet points describing what you learned by implementing this project.
 
 
-[Theaters]: /API%20Documentation/theaters/README.md
-[Sessions]: /API%20Documentation/sessions/README.md
+[Theaters]: /API%20Documentation/theaters
+[Sessions]: /API%20Documentation/sessions
