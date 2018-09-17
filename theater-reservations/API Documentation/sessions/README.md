@@ -2,7 +2,7 @@
   
 Field | Data Type | Description
 --------- | ----------- | -----------
-_id | ObjectId | id of session
+_id | ObjectId | Unique identifier
 theaterId | Number | theater id reference
 name | String | movie title
 description | String | description of movie
