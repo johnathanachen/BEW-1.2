@@ -45,7 +45,7 @@ reservations | Array | array of Reservation Schema
   }
 ```
 
-* **Sample Call:**
+**Sample Call:**
 
 ```console
 curl -X POST \
