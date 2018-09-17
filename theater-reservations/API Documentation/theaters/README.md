@@ -1,4 +1,4 @@
-# Theater Type Object
+# Theater Object
   
 Field | Data Type | Description
 --------- | ----------- | -----------
