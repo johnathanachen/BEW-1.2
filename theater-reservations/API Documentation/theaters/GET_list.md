@@ -15,7 +15,7 @@ Returns a list of current [Theaters]
         "text": "OK",
         "status_code": 200
     },
-    "result": {
+    "result": [{
         "_id": 1,
         "name": "The Royal",
         "seatsAvailable": 80,
@@ -45,7 +45,7 @@ Returns a list of current [Theaters]
           [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
           [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ],
     }
-  }
+  }]
 ```
 
 [Theaters]: API%20Documentation/theaters/README.md
