@@ -1,6 +1,6 @@
 # Reserve seats in a session
 
-    PUT services/:service_id/channel-types/:channel_type_id
+    PUT sessions/:id
     
 Updates a [Session]. Returns the updated object 
 
