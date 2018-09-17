@@ -25,7 +25,7 @@ reservations | Array | array of Reservation Schema
 
 ```js
   {
-	"theaterId": 1,
+    "theaterId": 1,
     "name" : "21 Jump Street",
     "description" : "Another action movie",
     "start" : "2015-03-11T15:00:00.000Z",
