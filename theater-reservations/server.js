@@ -24,14 +24,17 @@ db.once('open', function() {
 });
 
 app.use(pretty({ query: 'pretty' }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(bodyParser.json());
 
 // ROUTES
 app.use(subdomain('api', router));
-app.use('/theaters', theaterController);
-app.use('/sessions', sessionController);
-app.use('/reservations', reservationController);
-app.use('/carts', cartController);
+app.use('/v1/theaters', theaterController);
+app.use('/v1/sessions', sessionController);
+app.use('/v1/reservations', reservationController);
+app.use('/v1/carts', cartController);
 
 
 // Server
