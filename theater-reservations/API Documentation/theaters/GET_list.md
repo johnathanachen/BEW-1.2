@@ -48,4 +48,4 @@ Returns a list of current [Theaters]
   }
 ```
 
-[Theaters]: API%20Documentation/theaters/README.md
+[Theaters]: /theater-reservations/API%20Documentation/theaters/README.md
