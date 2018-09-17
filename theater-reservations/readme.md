@@ -91,27 +91,18 @@ curl -X POST \
   }'
 ```
 
-SessionSchema | Description
+SessionSchema | Type | Description
 --------- | -----------
-_id | id of session
-theaterId | theater id reference
-name | movie title
-description | description of movie
+_id | ObjectId | id of session
+theaterId | Number | theater id reference
+name | String | movie title
+description | String | description of movie
+start | Date | start date
+end | Date | end date
+price | Number | price of ticket
+seatsAvailable | Number | number of seats open
+seats | Mixed | 2D array of seats
+reservations | Array | array of Reservation Schema 
 
-```js
-SessionSchema
-{
-  "_id": ObjectId,
-  "theaterId": Number,
-  "name": String,
-  "description": String,
-  "start": Date,
-  "end": Date,
-  "price": Number,
-  "seatsAvailable": Number,
-  "seats": Mixed,
-  "reservations": Array[Reservation]
-}
-```
 
 
