@@ -3,7 +3,7 @@ Persisting Reservations via Express/MongoDB
 
 ## Purpose
 
-[**TODO**] Add description of the projects purpose.
+RESTful and resourceful routing techniques by creating a Theater Reservations API in Express.js
 
 ## How to Use This API
 
