@@ -8,10 +8,15 @@ RESTful and resourceful routing techniques by creating a Theater Reservations AP
 ## How to Use This API
 
 ### [Sessions][]
-- **[<code>POST</code>Sessions](API%20Documentation/sessions/sessions.md)**
+- **[<code>GET</code>Sessions](API%20Documentation/sessions/GET_id.md)**
+- **[<code>GET</code>Sessions](API%20Documentation/sessions/GET_list.md)**
+- **[<code>POST</code>Sessions](API%20Documentation/sessions/POST_create.md)**
 
 ### [Theaters][]
-- **[<code>POST</code>Theaters](API%20Documentation/theaters/theaters.md)**
+- **[<code>GET</code>Theaters](API%20Documentation/theaters/GET_id.md)**
+- **[<code>GET</code>Theaters](API%20Documentation/theaters/GET_list.md)**
+- **[<code>POST</code>Theaters](API%20Documentation/theaters/POST_create.md)**
+- **[<code>PUT</code>Theaters](API%20Documentation/theaters/PUT_update_id.md)**
 
 ## What I Learned
 
