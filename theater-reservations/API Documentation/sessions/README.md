@@ -1,4 +1,4 @@
-# Session
+# Session Type Object
   
 Field | Data Type | Description
 --------- | ----------- | -----------
