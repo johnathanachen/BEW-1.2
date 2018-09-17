@@ -2,7 +2,7 @@
 
     PUT theater/:id
     
-Updates a **[Theater](/API%20Documentation/theaters/README.md)** and returns the updated object
+Updates a [Theater] and returns the updated object
 
 ## Parameters
 ### JSON Body Parameters
@@ -44,4 +44,4 @@ seatsAvailable | Number | N | Avaiable seats in Theater
 }
 ```
 
-
+[Theaters]: /theater-reservations/API%20Documentation/theaters
