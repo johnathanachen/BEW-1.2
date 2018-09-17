@@ -6,7 +6,8 @@
 
 ## How to Use This API
 
-[Sessions](API%20Documentation/sessions.md)
+### [Sessions][]
+- **[<code>POST</code>Sessions](API%20Documentation/sessions/sessions.md)**
 
 [**TODO**] List **each route individually** and one to two sentences describing the intention of each route. You MUST include practical examples of how to call each route!
 
