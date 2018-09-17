@@ -44,8 +44,8 @@ Returns a list of current [Theaters]
           [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
           [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
           [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ],
-    }
-  }]
+    }]
+  }
 ```
 
 [Theaters]: API%20Documentation/theaters/README.md
