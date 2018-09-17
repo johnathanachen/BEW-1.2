@@ -1,5 +1,7 @@
 # Create Session
- `POST` sessions/
+
+	`POST` sessions/
+ 
 
 **Data Params**
 
