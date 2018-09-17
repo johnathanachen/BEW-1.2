@@ -92,7 +92,7 @@ curl -X POST \
 ```
 
 SessionSchema | Type | Description
---------- | -----------
+--------- | ----------- | -----------
 _id | ObjectId | id of session
 theaterId | Number | theater id reference
 name | String | movie title
