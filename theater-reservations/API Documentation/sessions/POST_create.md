@@ -1,11 +1,6 @@
-**URL**
+# Create Session
+ `POST` sessions/
 
-/sessions/
-
-**Method:**
-
-  `POST`
-  
 **Data Params**
 
 ```js
