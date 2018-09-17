@@ -69,7 +69,7 @@ reservations | [[Reservation]] | Y |
 	      "price" : 10,
 	      "total" : 30
 	    } ]
-	  }
+	}
     }
 }
 ```
