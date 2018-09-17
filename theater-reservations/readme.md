@@ -24,6 +24,8 @@ sessions.find({_id: sessionId});
 db.getSisterDB("booking").carts;
 ^ There is a DB called Carts
 
+[sessions](API Documentation/sessions.md)
+
 [**TODO**] List **each route individually** and one to two sentences describing the intention of each route. You MUST include practical examples of how to call each route!
 
 ## What I Learned
