@@ -1,4 +1,5 @@
-# Johnny's Theater API: Persisting Reservations via Express/MongoDB
+# Johnny's Theater API
+# Persisting Reservations via Express/MongoDB
 
 ## Purpose
 
