@@ -1,4 +1,4 @@
-# Sessions
+# Sessions List
     GET sessions/
     
 Returns a list of current [Sessions] for all [Theater]
