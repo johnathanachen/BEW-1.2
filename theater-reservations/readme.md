@@ -16,7 +16,7 @@ RESTful and resourceful routing techniques by creating a Theater Reservations AP
 - **[<code>GET</code>Theater](API%20Documentation/theaters/GET_id.md)**
 - **[<code>GET</code>Theater List](API%20Documentation/theaters/GET_list.md)**
 - **[<code>POST</code>Create Theater](API%20Documentation/theaters/POST_create.md)**
-- **[<code>PUT</code>UPdate Theater](API%20Documentation/theaters/PUT_update_id.md)**
+- **[<code>PUT</code>Update Theater](API%20Documentation/theaters/PUT_update_id.md)**
 
 ## What I Learned
 
