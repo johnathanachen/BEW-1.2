@@ -1,6 +1,6 @@
 # Create Session
 
-	POST sessions/
+	POST sessions/new
  
 ## Parameters
 ### JSON Body Parameters
