@@ -1,6 +1,6 @@
 # Create Theater
 
-	POST theaters/
+	POST theaters/new
 
 Create a [Theater]. Returns the newly-created object.
 
