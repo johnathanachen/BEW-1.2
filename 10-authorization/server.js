@@ -4,16 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
-var passport = require('passport');
-var flash    = require('connect-flash');
 var authController = require('./controllers/auth.js');
+var config = require('./config.js');
+var morgan = require('morgan');
+var bodyParser = require('body-parser');
 
-var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
-var morgan       = require('morgan');
-var bodyParser   = require('body-parser');
-var session      = require('express-session');
-
-var user = require('./models/user');
+var User = require('./models/user');
 
 var app = express();
 
@@ -24,21 +20,22 @@ db.once('open', function() {
    console.log("Connected successfully to server");
 });
 
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.set('superSecret', config.secret);
+
 // set up our express application
-app.use(morgan('dev'));
-app.use(bodyParser());
+app.use(morgan('dev')); // log every request to the console
+app.use(bodyParser()); // get info from POST and/or URL parameters
 
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(`cookie`Parser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(cookieParser()); // read cookies (needed for auth)
+app.use(express.static(path.join(__dirname, 'public'))); // Static content
 
 app.use('/', authController);
 

@@ -1,5 +1,5 @@
 {
-  "name": "07-jwt",
+  "name": "10-authorization",
   "version": "0.0.0",
   "private": true,
   "scripts": {
