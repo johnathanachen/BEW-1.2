@@ -1,4 +1,4 @@
-# JWT Auth with Express
+# JWT Authorization with Express
 
 ## What's Inside 
 
