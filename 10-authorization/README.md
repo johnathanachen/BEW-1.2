@@ -34,11 +34,11 @@ x-www-form-urlencoded
 URI Parameters
 token
 
-## Example
-### Request
+### Example
+#### Request
     GET /api?token={jwt-token}
 
-### Response
+#### Response
 ``` json
 {
     "message": "Welcome to the coolest API on earth!"
