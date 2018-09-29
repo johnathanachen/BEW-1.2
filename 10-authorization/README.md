@@ -31,7 +31,7 @@ x-www-form-urlencoded
 }
 ```
 
-# Access API Resource
+# Authorization
 
     GET /api
 
