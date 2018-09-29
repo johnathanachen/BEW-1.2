@@ -18,7 +18,8 @@
 # Retrieve Token
 
 `POST` /token
-
+    POST /token
+    
 x-www-form-urlencoded
 - name: johnny admin
 - password: password
