@@ -15,7 +15,7 @@
 | jQuery           |                                                            |
 | Mongoose         |                                                            |
 
-# RETRIEVE Token
+# Retrieve Token
 
 `POST` /token
 
@@ -31,7 +31,7 @@ x-www-form-urlencoded
 }
 ```
 
-# ACCESS API ROUTE
+# Access API Resource
 
 `GET` /api
 
