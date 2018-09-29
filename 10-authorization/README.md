@@ -22,3 +22,25 @@
 x-www-form-urlencoded
 - name: johnny admin
 - password: password
+
+{
+    "success": true,
+    "message": "Enjoy your token!",
+    "token": "eyJhbGcinR5c7ed264JZrzwI.eyJhZG1pbiI6dHJ1ZSwiaWF0IOiJIUzI1NiIsIMjYyNTM2LCJleHAiOjE1MzgyNjM5NzZ9.vTvklNTHY9OiJIUzI1NiIsI52TiAsw39CqV-s"
+}
+
+`GET` /api
+
+URI Parameters
+token
+
+## Example
+### Request
+    GET /api?token={jwt-token}
+
+### Response
+``` json
+{
+    "message": "Welcome to the coolest API on earth!"
+}
+```
