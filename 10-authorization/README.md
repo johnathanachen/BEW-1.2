@@ -4,7 +4,7 @@
 
 * ExpressJS
 * Bootstrap 3
-* `express-jwt`
+* express-jwt
 * js-cookie
 * cookie-parser
 * Bower
