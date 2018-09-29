@@ -17,7 +17,6 @@
 
 # Retrieve Token
 
-`POST` /token
     POST /token
     
 x-www-form-urlencoded
@@ -34,10 +33,12 @@ x-www-form-urlencoded
 
 # Access API Resource
 
-`GET` /api
+    GET /api
 
-URI Parameters
-token
+## URI Parameters
+Field | Description
+--- | --- |
+Token | JWT token from /token
 
 ## Example
 ### Request
