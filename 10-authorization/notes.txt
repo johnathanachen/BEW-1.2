@@ -1,0 +1,11 @@
+if a logged in user is an admin, show an link to /admin in your navbar
+If login/signup is successful, hide all HTML elements with the class `.unauthenticated` and show all HTML elements with the class `.authenticated`.
+protect /admin url
+ "admin" attribute your token
+
+
+ {
+  "sub": "1234567890",
+  "name": "John Doe",
+  "admin": true
+}

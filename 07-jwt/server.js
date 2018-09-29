@@ -1,21 +1,33 @@
-const express = require('express');
-const router = express.Router();
-const app = express();
-const bodyParser = require('body-parser');
-const jwt = require("jsonwebtoken");
-const subdomain = require('express-subdomain');
-const cookieParser = require("cookie-parser");
-const authController = require('./controllers/auth.js');
+var createError = require('http-errors');
+var jwt = require('jsonwebtoken');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+var mongoose = require('mongoose');
+var authController = require('./controllers/auth.js');
+var user = require('./models/user');
 
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/BEW1.2/07-jwt', { useNewUrlParser: true });
+var app = express();
+
+mongoose.connect('mongodb://localhost:27017/BEW', { useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
    console.log("Connected successfully to server");
 });
 
+var token = jwt.sign({ _id: user._id }, 'shhhhhhared-secret');
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+var jwt = require('express-jwt');
 app.use(jwt({
     secret: 'shhhhhhared-secret',
     getToken: function fromHeaderOrCookie (req) { //fromHeaderOrQuerystring
@@ -26,15 +38,26 @@ app.use(jwt({
     }
     return null;
     }
-}).unless({path: ['/', '/login', '/sign-up']}));
+}).unless({path: ['/', '/login', '/sign-up', '/bananas']}));
 
-app.use('/sign-up', authController);
+app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/', authController);
 
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
+});
 
-// Server
-app.listen(3000, () => {
-  console.log('App listening on port 3000!')
-})
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-module.exports = db;
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
+});
+
+module.exports = app;

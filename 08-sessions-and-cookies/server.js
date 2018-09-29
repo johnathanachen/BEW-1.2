@@ -17,7 +17,7 @@ var usersRouter = require('./routes/users');
 var configDB = require('./config/database.js');
 
 var app = express();
-var port     = process.env.PORT || 8080;
+var port = process.env.PORT || 8080;
 
 mongoose.connect(configDB.url, { useNewUrlParser: true });
 var db = mongoose.connection;
