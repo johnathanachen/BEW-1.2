@@ -15,7 +15,7 @@
 | jQuery           |                                                            |
 | Mongoose         |                                                            |
 
-## API
+# RETRIEVE Token
 
 `POST` /token
 
@@ -23,22 +23,26 @@ x-www-form-urlencoded
 - name: johnny admin
 - password: password
 
+``` json
 {
     "success": true,
     "message": "Enjoy your token!",
     "token": "eyJhbGcinR5c7ed264JZrzwI.eyJhZG1pbiI6dHJ1ZSwiaWF0IOiJIUzI1NiIsIMjYyNTM2LCJleHAiOjE1MzgyNjM5NzZ9.vTvklNTHY9OiJIUzI1NiIsI52TiAsw39CqV-s"
 }
+```
+
+# ACCESS API ROUTE
 
 `GET` /api
 
 URI Parameters
 token
 
-### Example
-#### Request
+## Example
+### Request
     GET /api?token={jwt-token}
 
-#### Response
+### Response
 ``` json
 {
     "message": "Welcome to the coolest API on earth!"
