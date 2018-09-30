@@ -28,7 +28,7 @@ password | user password
 ## Example
 ### Request
 
-    POST /api?token?name={name}&password={password}
+    POST /token?name={name}&password={password}
 
 ### Response
 ``` json
@@ -48,7 +48,7 @@ password | user password
 ## Example
 ### Request
 
-    POST /api?token
+    POST /token
 
 ### Response
 ``` json
