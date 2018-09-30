@@ -15,30 +15,36 @@
 | jQuery           |                                                            |
 | Mongoose         |                                                            |
 
-## API
+# Retrieve Token
 
-`POST` /token
-
+    POST /token
+    
 x-www-form-urlencoded
 - name: johnny admin
 - password: password
 
+``` json
 {
     "success": true,
     "message": "Enjoy your token!",
     "token": "eyJhbGcinR5c7ed264JZrzwI.eyJhZG1pbiI6dHJ1ZSwiaWF0IOiJIUzI1NiIsIMjYyNTM2LCJleHAiOjE1MzgyNjM5NzZ9.vTvklNTHY9OiJIUzI1NiIsI52TiAsw39CqV-s"
 }
+```
 
-`GET` /api
+# Authorization
 
-URI Parameters
-token
+    GET /api
 
-### Example
-#### Request
+## URI Parameters
+Field | Description
+--- | --- |
+Token | JWT token from /token
+
+## Example
+### Request
     GET /api?token={jwt-token}
 
-#### Response
+### Response
 ``` json
 {
     "message": "Welcome to the coolest API on earth!"
