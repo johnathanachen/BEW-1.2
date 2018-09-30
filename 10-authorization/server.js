@@ -28,7 +28,7 @@ app.set('superSecret', config.secret);
 
 // set up our express application
 app.use(morgan('dev')); // log every request to the console
-app.use(bodyParser()); // get info from POST and/or URL parameters
+app.use(bodyParser.json()); // get info from POST and/or URL parameters
 
 
 app.use(logger('dev'));
