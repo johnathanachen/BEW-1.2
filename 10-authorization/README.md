@@ -1,5 +1,6 @@
 # JWT Authorization with Express
 
+
 ## What's Inside
 
 | Dependencies     | Description                                                |
@@ -59,6 +60,7 @@ password | user password
 }
 ```
 
+
 # Authorization
 
     GET /api
@@ -79,9 +81,11 @@ Token | JWT token from /token
 }
 ```
 
+
 # Fetch All Users
 
     GET /api/users
+    
     
 # Protected Resource
  
