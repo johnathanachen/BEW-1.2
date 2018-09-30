@@ -78,3 +78,21 @@ Token | JWT token from /token
     "message": "Welcome to the coolest API on earth!"
 }
 ```
+
+# Fetch All Users
+
+    GET /api/users
+    
+# Protected Resource
+ 
+     POST  /admin
+     
+# Setup New User
+
+    GET /setup
+
+### Response
+``` json
+{ 
+    "success": "true"
+}
