@@ -58,6 +58,7 @@ password | user password
     "token": "eyJhbGcinR5c7ed264JZrzwI.eyJhZG1pbiI6dHJ1ZSwiaWF0IOiJIUzI1NiIsIMjYyNTM2LCJleHAiOjE1MzgyNjM5NzZ9.vTvklNTHY9OiJIUzI1NiIsI52TiAsw39CqV-s"
 }
 ```
+---
 
 # Authorization
 
@@ -78,11 +79,14 @@ Token | JWT token from /token
     "message": "Welcome to the coolest API on earth!"
 }
 ```
+---
 
 # Fetch All Users
 
     GET /api/users
     
+---
+
 # Protected Resource
  
      POST  /admin
