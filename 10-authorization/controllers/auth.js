@@ -3,7 +3,10 @@ const User = require('../models/user.js');
 var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
 var url = require('url');
 var querystring = require('querystring');
+var bodyParser = require('body-parser');
 var router = express.Router();
+
+var app = express();
 
 var expressJwt = require('express-jwt'); // protect routes
 
@@ -29,9 +32,9 @@ router.get('/sign-up', function(req, res) {
 });
 
 router.post('/token', function(req, res) {
-  // find the user
+
   User.findOne({
-   name: req.params.name || req.query.name
+   name: req.body.name || req.query.name
   }, function(err, user) {
    if (err) throw err;
 
@@ -40,7 +43,7 @@ router.post('/token', function(req, res) {
    } else if (user) {
 
      // check if password matches
-     if (user.password != (req.params.password || req.query.password) ) {
+     if (user.password != (req.body.password || req.query.password) ) {
        res.json({ success: false, message: 'Authentication failed. Wrong password.' });
      } else {
 
